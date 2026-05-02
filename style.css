@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left {
+    flex: 0 0 30%;
+    max-width: 350px;
+    background-color: #160d45;
+    color: aliceblue;
+    padding: 40px 30px;
+    border-right: 1px solid #b0cee8;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px auto;
+    border: 4px solid #000000;
+}
+
+.contact-box,
+.skills-box,
+.lang-box,
+.cert-box {
+    margin-bottom: 35px;
+}
+
+.left h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #4a4270;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #b0cee8;
+    text-transform: uppercase;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.banner {
+    background-color: #160d45;
+    color: #f0f8ff;
+    padding: 60px 50px;
+}
+
+.banner h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #b0cee8;
+    font-weight: 300;
+}
+
+.main-info {
+    padding: 50px;
+}
+
+.profile-section,
+.edu-section,
+.work-section {
+    margin-bottom: 40px;
+}
+
+.main-info h3 {
+    background-color: #160d45;
+    color: #f0f8ff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.main-info p,
+.main-info li {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.main-info strong {
+    color: #160d45;
+    font-size: 17px;
+}
+
+.main-info ul {
+    margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .right {
+        order: 1;
+    }
+
+    .banner {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .main-info {
+        padding: 25px;
+    }
+
+    .left h3 {
+        border-bottom: 1px solid #b0cee8;
+        display: inline-block;
+        padding: 0 10px 5px 10px;
+    }
+}
